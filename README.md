@@ -1,1 +1,1 @@
-# Intro-To-Artificial-Intelligence
+This repository holds projects created during the undertaking of Introduction to Artificial Intelligence, a course offered at Tufts University. Assignment 2 implements informed search algorithms (most notably the A* algorithm).
