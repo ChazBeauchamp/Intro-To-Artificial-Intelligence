@@ -1,0 +1,33 @@
+/*******************************************************************************
+* Assignment 2: Informed Search
+* CS 131 Summer 2024 
+* README
+* Author: Chaz Beauchamp, UTLN: cbeauc01
+*******************************************************************************/
+
+Program Purpose:
+-------------------------------
+    The purpose of this program is to model both A* and Uniform Cost search to
+    solve the pancake problem. It implements these searches through four 
+    modules: one for general purpose methods, one for the priority queue that
+    both search types rely upon (using Python's heapq module), one for the 
+    node class, and another for each search algorithm. For backward cost, I
+    chose to use the flip size as opposed to a uniform cost. When combined with
+    the gap heuristic we maintain admissibility and consistency because the flip
+    size is always an exact cost and therefore will never be an overestimate.
+    We know the gap heuristic satisfies these requirements per the provided
+    paper.
+
+    To implement this program, instead of hard coding the ten pancakes as
+    designated in the spec, the program also allows the user to input the 
+    number of pancakes they would like in the stack.
+
+How to Execute Program:
+-----------------------
+
+    Terminal Command: py main.py
+
+    Once the program has started you have the option to decide which search
+    you will perform, at the end the program will tell you whether or not a
+    solution was found, the sequence of steps taken to reach that solution,
+    and the number of nodes explored.
